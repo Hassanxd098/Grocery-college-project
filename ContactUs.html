@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shafra Supermarket</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .store-name {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #130D38;
+            color: white;
+            padding: 20px;
+        }
+        .store-name span {
+            color: #2ecc71;
+            font-style: italic;
+        }
+        main {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form, .map, .terms {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button {
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #34495e;
+        }
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 5px;
+            border: none;
+        }
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .map a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .map a:hover {
+            background: #34495e;
+        }
+        .logo {
+    height: 32px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+.r-symbol {
+    height: 27px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="store-name">
+        <div class="store-name">
+            <img src="/images/shafralogo.png" alt="Shafra Logo" class="logo">
+            Shaf<span><img src="/images/r-symbol.png" alt="R Symbol" class="r-symbol"></span>a Super Market
+        </div>        
+    </div>
+    <main>
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <section class="map">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2275821818547!2d78.71819!3d12.936659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad75002b88f80b%3A0x17e6e571e339499a!2sshafrasupermarket!5e0!3m2!1sen!2sus!4v1616412306760!5m2!1sen!2sus" 
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <a href="https://www.google.com/maps/place/shafrasupermarket/@12.936659,78.71819,48m/data=!3m1!1e3!4m6!3m5!1s0x3bad75002b88f80b:0x17e6e571e339499a!8m2!3d12.9367156!4d78.7182202!16s%2Fg%2F11wc1sbvqq?hl=en&entry=ttu&g_ep=EgoyMDI1MDMxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">View on Google Maps</a>
+        </section>
+
+        <section class="terms">
+            <h2>Terms and Conditions</h2>
+            <p>By using our services, you agree to the following terms...</p>
+            <p><b> Delivery</b><br>
+                Delivery times may vary based on location, availability, and external factors.
+                Customers must provide accurate delivery details; failure to do so may result in order cancellation or delays..<br>
+               <p> <b>Returns & Refunds</b></p>
+                Perishable items (e.g., fresh groceries) are non-returnable unless they arrive damaged or expired.
+                For eligible returns, customers must report issues within [1] hours of receiving the product.
+                Refunds will be processed within [1 or 2] Working days via the original payment method.</p>
+        </section>
+    </main>
+</body>
+
+</html>

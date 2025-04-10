@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery-store</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="store-name">
+                <div class="store-name">
+                    <img src="/images/shafralogo.png" alt="Shafra Logo" class="logo">
+                    Shaf<span><img src="/images/r-symbol.png" alt="R Symbol" class="r-symbol"></span>a <span id="SUP">SUPER MARKET</span>
+                </div>        
+            </div>
+
+            <ul class="nav-links">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-box" placeholder="Search...">
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="#">Shop</a></li> -->
+
+                <li class="dropdown">
+                    <div class="section2">
+                        <a href="#">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fruits.html">Fruits</a></li>
+                            <li><a href="nav.html">Vegetables</a></li>
+                            <li><a href="dry fruits.html">Dry Fruits</a></li>
+                            <li><a href="meat.html">Meat</a></li>
+                            <li><a href="rice.html">Rice</a></li>
+                            <li><a href="Flour.html">Flour</a></li>
+                            <li><a href="soft drinks.html">Soft drinks</a></li>
+                            <li><a href="Noodles.html">Noodles</a></li>
+
+                        </ul>
+                </li>
+                </div>
+                <li><a href="ContactUs.html">Contact</a></li>
+                <li><a href="My_Carts.html">My Cart</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+
+            </div>
+        </nav>
+    </header>
+
+    <script src="script.js"></script>
+
+
+
+    <hr>
+
+    <!-- <nav class="navbar-2">
+            <div class="nav-2">
+                <a href="nav.html">
+                    <li class="items">Vegetables</li>
+                </a>
+                <a href="fruits.html">
+                    <li class="items">Fruits</li>
+                </a>
+                <a href="dry fruits.html">
+                    <li class="items">Dry Fruits</li>
+                </a>
+                <a href="meat.html">
+                    <li class="items">Meat</li>
+                </a>
+                <a href="rice.html">
+                    <li class="items">Rice</li>
+                </a>
+                <a href="Flour.html">
+                    <li class="items">Flour</li>
+                </a>
+                <a href="drinks.html">
+                    <li class="items">Soft Drinks</li>
+                </a>
+                <a href="noodles.html">
+                    <li class="items">Noodles</li>
+                </a>
+            </div>
+        </nav>
+        <hr> -->
+
+    <div class="advertisement">
+        <div class="ads-1">
+            <img class="ad-1" src="/images/Frame 2.png" alt="">
+            <img class="ad-1" src="/images/grocery main 5.jpg" alt="">
+            <img class="ad-1" src="/images/Frame 7.png" alt="">
+            <img class="ad-1" src="/images/Frame 6.png" alt="">
+            <img class="ad-1" src="/images/Frame 9.png" alt="">
+        </div>
+
+
+    </div>
+
+    </div>
+    <div class="arrow">
+        <div class="post">
+            <h1 style="font-family: cursive;"> Categories</h1>
+            <div class="d-1">
+                <div class="d-2">
+                    <a href="/nav.html">
+                        <img src="/images/vegs arrow.jpg" alt="error">
+                    </a>
+                    <p>Vegetables</p>
+                </div>
+                <div class="d-2">
+                    <a href="/fruits.html">
+                        <img src="/images/fruits arrow.jpg" alt="error">
+                    </a>
+                    <p> Fruits</p>
+                </div>
+                <div class="d-2">
+                    <a href="dry fruits.html">
+                        <img src="/images/dry arrow.jpg" alt="error">
+                    </a>
+                    <p> Dry fruits</p>
+                </div>
+                <div class="d-2">
+                    <a href="meat.html">
+                        <img src="/images/meat arrow.jpg" alt="error">
+                    </a>
+                    <p>Meats</p>
+                </div>
+            </div>
+            <div class="d-1">
+                <div class="d-2">
+                    <a href="rice.html">
+                        <img src="/images/rice arrow.jpg" alt="error">
+                    </a>
+                    <p>Rice</p>
+                </div>
+                <div class="d-2">
+                    <a href="Flour.html">
+                        <img src="/images/flours arrow.jpg" alt="error">
+                    </a>
+                    <p> Flour</p>
+                </div>
+                <div class="d-2">
+                    <a href="soft drinks.html">
+                        <img src="/images/softdrinks arrow.jpg" alt="error">
+                    </a>
+                    <p> Soft drinks</p>
+                </div>
+                <div class="d-2">
+                    <a href="Noodles.html">
+                        <img src="/images/noodle-1.jpg" alt="error">
+                    </a>
+
+                    <p>Noodles</p>
+                </div>
+                <!-- <div class="d-1">
+                    <img src="/images/vegs arrow.jpg" alt="error">
+                    <img src="/images/fruits arrow.jpg" alt="error">
+                    <img src="/images/dry arrow.jpg" alt="error">
+                    <img src="/images/meat arrow.jpg" alt="error">
+                </div> -->
+            </div>
+        </div>
+
+        <div class="phones-1">
+            <div class="header">
+                <p class="heading">Vegetables</p>
+            </div>
+            <div class="cards-1" id="cass">
+                <div class="c-1">
+                    <img src="/images/tomato.jpg" alt="">
+                    <p>Tomato</p>
+                    <p>Rs.20</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/potato.jpg" alt="">
+                    <p>Potato</p>
+                    <p>Rs.45</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/oni.jpg" alt="">
+                    <p>Onion</p>
+                    <p>Rs.60</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/ladies fingers.jpg" alt="">
+                    <p>Ladies Fingers</p>
+                    <p>Rs.35</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/cucumber.jpg" alt="">
+                    <p>Cucumber</p>
+                    <p>Rs.20</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/corianserss.jpg" alt="">
+                    <p>Coriander</p>
+                    <p>Rs.25</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/carrot.jpg" alt="">
+                    <p>Carrot</p>
+                    <p>Rs.25</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/capsicums.jpg" alt="">
+                    <p>Capsicum</p>
+                    <p>Rs.40</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <hr>
+
+        <div class="phones-1">
+            <div class="header">
+                <p class="heading">Dry Fruits</p>
+            </div>
+            <div class="cards-1">
+                <div class="c-1">
+                    <img src="/images/almonds.jpg" alt="">
+                    <p>Almonds</p>
+                    <p>Rs.300</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/cashews.jpg" alt="">
+                    <p>Cashews</p>
+                    <p>Rs.400</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/dates.jpg" alt="">
+                    <p>Dates</p>
+                    <p>Rs.250</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/figs.jpg" alt="">
+                    <p>Figs</p>
+                    <p>Rs.400</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/hazelnuts.jpg" alt="">
+                    <p>Hazel Nuts</p>
+                    <p>Rs.200</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/peanuts.jpg" alt="">
+                    <p>Peanuts</p>
+                    <p>Rs.125</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/pistachios.jpg" alt="">
+                    <p>Pistachios</p>
+                    <p>Rs.400</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/raisin.jpg" alt="">
+                    <p>Raisin</p>
+                    <p>Rs.450</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <hr>
+
+        <div class="phones-1" id="fruit">
+            <div class="header">
+                <p class="heading">Packed Items</p>
+            </div>
+            <div class="cards-1">
+                <div class="c-1">
+                    <img src="/images/elachi.jpg" alt="">
+                    <p>Elachi</p>
+                    <p>Rs.250</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/ghee.jpg" alt="">
+                    <p>Ghee</p>
+                    <p>Rs.35</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/oil.jpg" alt="">
+                    <p>Oil</p>
+                    <p>Rs.120</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/peanuts oil.jpg" alt="">
+                    <p>Peanuts</p>
+                    <p>Rs.35</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/pepper.jpg" alt="">
+                    <p>Pepper</p>
+                    <p>Rs.200</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/poha.jpg" alt="">
+                    <p>Poha</p>
+                    <p>Rs.250</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/rice.jpg" alt="">
+                    <p>Rice</p>
+                    <p>Rs.250</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/sugar.jpg" alt="">
+                    <p>Sugar</p>
+                    <p>Rs.140</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <hr>
+
+        <div class="phones-1">
+            <div class="header">
+                <p class="heading">Staples</p>
+            </div>
+            <div class="cards-1">
+                <div class="c-1">
+                    <img src="/images/chana dal.jpg" alt="">
+                    <p>Chana Dal</p>
+                    <p>Rs.200</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/dal.jpg" alt="">
+                    <p>Dal</p>
+                    <p>Rs.350</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/toor dal.jpg" alt="">
+                    <p> Toor Dal</p>
+                    <p>Rs.250</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/urad dal.jpg" alt="">
+                    <p>Urad Dal</p>
+                    <p>Rs.360</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/kubuli chana.jpg" alt="">
+                    <p>Kubuli Chana</p>
+                    <p>Rs.200</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/urad kali.jpg" alt="">
+                    <p>Urad Kali</p>
+                    <p>Rs.250</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+                    <img src="/images/urad toor.jpg" alt="">
+                    <p>Urad Toor</p>
+                    <p>Rs.460</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+                <div class="c-1">
+
+                    <img src="/images/chana dal (1).jpg" alt="">
+                    <p>Chana Dal</p>
+                    <p>Rs.100</p>
+                    <span>
+                        <button class="a">Add To Cart</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="about-us">
+            <div id="image-1"><img src="/images/abt.jpg" alt=""></div>
+            <div id="text-1">
+                <h1>About Us</h1>
+                <p>At Grocery.com, our main online property, we present standardized profiles about every major
+                    grocery
+                    retailer, brand, manufacturer and supplier in the USA and around the world. These profiles
+                    contain
+                    description, history, geographical and financial data, general contact information plus job
+                    opportunity
+                    and weekly circular links. The information, researched through a variety of public and direct
+                    sources,
+                    is authoritative and cited by many online publications. Note that we are not affiliated with any
+                    of
+                    the
+                    retailer or brands covered on this website.</p>
+            </div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <div class="Services">
+            <div id="text-2">
+                <h1>Services</h1>
+                <p>At Grocery.com, our main online property, we present standardized profiles about every major
+                    grocery
+                    retailer, brand, manufacturer and supplier in the USA and around the world. These profiles
+                    contain
+                    description, history, geographical and financial data, general contact information plus job
+                    opportunity
+                    and weekly circular links. The information, researched through a variety of public and direct
+                    sources,
+                    is authoritative and cited by many online publications. Note that we are not affiliated with any
+                    of
+                    the
+                    retailer or brands covered on this website.</p>
+            </div>
+            <div id="image-2"><img src="/images/ser.jpg" alt=""></div>
+        </div>
+
+        <footer class="footer-1">
+            <div class="f-1">
+                <p class="h-1">Company</p>
+                <p class="b-1"> About</p>
+                <p class="b-1">careers</p>
+            </div>
+            <div class="f-1">
+                <p class="h-1">View website in</p>
+                <p class="b-1"><i class="fa-solid fa-check"></i>English</p>
+            </div>
+            <div class="f-1">
+                <p class="h-1">Nee Help<i class="fa-solid fa-question"></i></p>
+                <p class="b-1">Visit help center</p>
+                <p class="b-1">Share Feedback</p>
+            </div>
+            <div class="f-1">
+                <p class="h-1">Connect With Us <br>
+                    PM HASSAN UR RAHMAN <br>
+                    contact: 8754938757 <br>
+                    Address: 21/98 , High road opp to zakir sweet <br>pernambut vellore district pernambut 638810.
+
+                </p>
+                <span class="b-1-1-1">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </span>
+                <span class="b-1-1-2">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </span>
+                <span class="b-1-1-3">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </span>
+                <span class="b-1-1-4">
+                    <i class="fa-brands fa-telegram"></i>
+                </span>
+
+            </div>
+        </footer>
+        <footer class="footer-12">
+           <div class="heds"><h3> Follow us</h3></div> 
+            <div class="foot">
+                <div class="f-3">
+                    <div>
+                        <a href="https://www.facebook.com/share/1A4pkK9DPs/"><img src="images/faceboo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="f-4">
+                    <div>
+                        <a href="https://www.instagram.com/shafra_super_market?igsh=MzlpaXUwNWhmMzc3"><img src="images/instaco.png" alt="">
+                           
+                        </a>
+                    </div>
+                </div>
+                 <div class="f-5">
+                    <div>
+                        <a href=""><img src="images/twitters.png" alt="">
+                           
+                        </a>
+                    </div>
+            </div>
+        
+
+        </footer>
+
+        <footer class="footer-2">
+            <div class="f-2">
+                <p class="b-1">Terms & Conditions Privacy Policy FAQ</p>
+                <p class="b-1">2024 STAR.All Rights Reserved</p>
+            </div>
+            <div class="f-2">
+                <div class="play-app">
+                    <img class="f-2-2" src="/asjdf;klasd/google-playstore.jpg" alt="">
+                    <img class="f-2-2" src="/asjdf;klasd/ios-appstore.jpg" alt="">
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
+
+<script src="addToCart.js"></script>
