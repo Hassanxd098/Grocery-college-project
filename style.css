@@ -618,11 +618,21 @@ transition-duration: 0.3s;
 
     transform: scale(1.1);
     /* box-shadow: 0px 0px 5px 10px #7deef1; */
-    transition:  0.2s ease-in-out;
+    transition:  0.5s ease-in-out;
     height: 322px;
     /* transition-delay: 1s; */
 }
 
+
+/* Enhance button on hover */
+.c-1:hover button {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    transform: translateY(5px) scale(1.1);
+    background: linear-gradient(135deg, #6d676e, #00c6ff);
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
 .c-1 p {
     position: relative;
     color: rgb(7, 7, 7);
@@ -1029,9 +1039,9 @@ transition-duration: 0.3s;
         overflow-x: scroll;
     }
     .c-1:hover {
-        transform: scale(1.1);
+        transform: scale(0.5);
         /* box-shadow: 0px 0px 5px 10px #7deef1; */
-        transition: 0.2s;
+        transition: 0.3s;
         height: 322px;
         /* transition-delay: 1s; */
     }
